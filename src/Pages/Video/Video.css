@@ -1,0 +1,33 @@
+.play-container {
+    display: flex;
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; /* Provides spacing between video and recommended list */
+    box-sizing: border-box;
+  }
+  
+  /* PlayVideo Component styling */
+  .play-container > .play-video {
+    flex-basis: 69%; /* Video takes 69% width */
+    max-width: 69%;  /* Prevent overflow */
+  }
+  
+  /* Recommended Component styling */
+  .play-container > .recommended {
+    flex-basis: 29%; /* Recommended videos take 29% width */
+    max-width: 29%;  /* Prevent overflow */
+  }
+  
+  /* Responsive design: Stack on smaller screens */
+  @media (max-width: 768px) {
+    .play-container {
+      flex-direction: column; /* Stacks components vertically */
+    }
+    .play-container > .play-video,
+    .play-container > .recommended {
+      max-width: 100%; /* Full width on small screens */
+    }
+  }
+  
