@@ -4,7 +4,7 @@ import like from "../../assets/like.png";
 import dislike from "../../assets/dislike.png";
 import share from "../../assets/share.png";
 import save from "../../assets/save.png";
-import { API_KEY, value_converter } from "../../../src/data.js";
+import { API_KEY, value_converter } from "../../../src/data.jsx";
 import moment from "moment/moment.js";
 
 const PlayVideo = ({ videoId }) => {

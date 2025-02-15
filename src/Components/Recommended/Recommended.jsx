@@ -1,7 +1,7 @@
 import React from 'react'
 import './Recommended.css'
 import { useState, useEffect } from 'react'
-import { API_KEY, value_converter } from '../../data'
+import { API_KEY, value_converter } from '../../data.jsx'
 import { Link } from 'react-router-dom'
 
 
